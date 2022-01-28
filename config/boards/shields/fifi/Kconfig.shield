@@ -1,0 +1,5 @@
+config SHIELD_FIFI_LEFT
+	def_bool $(shields_list_contains,fifi_left)
+
+config SHIELD_FIFI_RIGHT
+	def_bool $(shields_list_contains,fifi_right)
