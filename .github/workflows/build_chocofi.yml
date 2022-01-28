@@ -1,6 +1,6 @@
 on: [push, pull_request, workflow_dispatch]
 
-name: Build
+name: Build_chocofi
 
 jobs:
   build:
@@ -33,9 +33,9 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build (Fifi Left)
+      - name: West Build (Chocofi Left)
         run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=chocofi_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Fifi DTS File
+      - name: Chocofi DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano_v2.dts.pre.tmp
       - name: Chocofi Left Kconfig file
