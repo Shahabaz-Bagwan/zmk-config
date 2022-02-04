@@ -7,7 +7,7 @@
 #include "chocofi.dtsi"
 
 &default_transform {
-	col-offset = <4>;
+	col-offset = <5>;
 };
 
 &kscan0 {
