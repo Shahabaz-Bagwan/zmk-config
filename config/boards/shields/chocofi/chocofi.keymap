@@ -35,17 +35,17 @@
 
                 default_layer {
                         bindings = <
-   &kp Q       &kp W       &mt RALT E     &kp R          &kp T             &kp Y        &kp U         &mt RALT I       &kp O          &mt RCTL P
+   &kp Q       &kp W       &kp E          &kp R          &kp T             &kp Y        &kp U         &kp I            &kp O          &mt RCTL P
    &kp A       &kp S       &kp D          &kp F          &kp G             &kp H        &kp J         &kp K            &kp L          &kp SEMI
-   &hm LALT Z  &hm LGUI X  &hm LCTRL C    &hm LSHFT V    &kp B             &kp N        &hm RSHFT M   &hm LCTRL COMMA  &hm LGUI DOT   &hm LALT FSLH
+   &hm LALT Z  &hm LGUI X  &hm LCTRL C    &hm LSHFT V    &mt RALT B        &mt RALT N   &hm RSHFT M   &hm LCTRL COMMA  &hm LGUI DOT   &hm LALT FSLH
                            &kp ESC        &lt NAV SPACE  &kp TAB           &lt SYM RET  &lt NUM BSPC  &lt FUN DEL
                         >;
                 };
  
                 nav_layer {
                         bindings = <
-   &none     &none         &none          &none          &none             &none        &kp C_VOL_DN  &kp C_VOL_UP     &kp K_MUTE     &none
-   &kp LALT  &kp LGUI      &kp LCTRL      &kp LSHFT      &none             &kp LEFT     &kp DOWN      &kp UP           &kp RIGHT      &kp CAPS
+   &none     &none         &none          &none          &none             &kp CAPS     &kp C_VOL_DN  &kp C_VOL_UP     &kp K_MUTE     &none
+   &kp LALT  &kp LGUI      &kp LCTRL      &kp LSHFT      &none             &kp LEFT     &kp DOWN      &kp UP           &kp RIGHT      &none
    &none     &kp RALT      &none          &none          &none             &kp HOME     &kp PG_DN     &kp PG_UP        &kp END        &tog NUM
                            &none          &none          &none             &kp RET      &kp BSPC      &kp DEL
                         >;
@@ -55,7 +55,7 @@
                         bindings = <
    &kp LBKT    &kp N7      &kp N8         &kp N9         &kp RBKT          &none        &none         &none            &none          &none
    &kp SQT     &kp N4      &kp N5         &kp N6         &kp EQUAL         &none        &kp LSHFT     &kp LCTRL        &kp LGUI       &kp LALT
-   &kp GRAVE   &kp N1      &kp N2         &kp N3         &kp BSLH          &none        &none         &none            &kp RALT       &none
+   &kp GRAVE   &kp N1      &kp N2         &kp N3         &kp BSLH          &none        &none         &none            &kp RALT       &tog NUM
                            &kp DOT        &kp N0         &kp MINUS         &none        &none         &none
                         >;
                 };
@@ -80,9 +80,9 @@
 
                 adj_layer {
                         bindings = <
-   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4     &none        &none   &none   &none   &none
+   &bt BT_SEL 0  &bt BT_SEL 1  &none         &none        &none            &none        &none   &none   &none   &none
    &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &reset       &bootloader      &bootloader  &reset  &none   &none   &none
-   &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &none        &none            &none        &none   &none   &none   &none
+   &out OUT_TOG  &none         &none         &none        &none            &none        &none   &none   &none   &none
                                &none         &none        &none            &none        &none   &none
                         >;
                 };
