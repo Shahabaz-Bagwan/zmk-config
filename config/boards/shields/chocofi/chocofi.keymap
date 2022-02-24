@@ -38,19 +38,19 @@
 
                 default_layer {
                         bindings = <
-   &kp Q       &kp W       &kp E          &kp R          &kp T             &kp Y        &kp U         &kp I            &kp O          &mt RCTL P
+   &mt RALT Q  &kp W       &kp E          &kp R          &kp T             &kp Y        &kp U         &kp I            &kp O          &mt RALT P
    &kp A       &kp S       &kp D          &kp F          &kp G             &kp H        &kp J         &kp K            &kp L          &kp SEMI
-   &hm LALT Z  &hm LGUI X  &hm LCTRL C    &hm LSHFT V    &mt RALT B        &mt RALT N   &hm RSHFT M   &hm LCTRL COMMA  &hm LGUI DOT   &hm LALT FSLH
-                           &kp ESC        &lt NAV SPACE  &lt MOUSE TAB     &kp RET      &lt NUM BSPC  &lt FUN DEL
+   &hm LALT Z  &hm LGUI X  &hm LCTRL C    &hm LSHFT V    &kp B             &kp N        &hm RSHFT M   &hm LCTRL COMMA  &hm LGUI DOT   &hm LALT FSLH
+                           &mt RCTL ESC   &lt NAV SPACE  &lt MOUSE TAB     &kp RET      &lt NUM BSPC  &lt FUN DEL
                         >;
                 };
  
                 cole_layer {
                         bindings = <
-   &kp Q       &kp W       &kp F          &kp P          &kp B             &kp J        &kp L         &kp U            &kp Y          &mt RCTL SEMI
+   &mt RALT Q  &kp W       &kp F          &kp P          &kp B             &kp J        &kp L         &kp U            &kp Y          &mt RALT SEMI
    &kp A       &kp R       &kp S          &kp T          &kp G             &kp K        &kp N         &kp E            &kp I          &kp O
-   &hm LALT Z  &hm LGUI X  &hm LCTRL C    &hm LSHFT D    &mt RALT V        &mt RALT M   &hm RSHFT H   &hm LCTRL COMMA  &hm LGUI DOT   &hm LALT FSLH
-                           &kp ESC        &lt NAV SPACE  &lt MOUSE TAB     &kp RET      &lt NUM BSPC  &lt FUN DEL
+   &hm LALT Z  &hm LGUI X  &hm LCTRL C    &hm LSHFT D    &kp V             &kp M        &hm RSHFT H   &hm LCTRL COMMA  &hm LGUI DOT   &hm LALT FSLH
+                           &mt RCTL ESC        &lt NAV SPACE  &lt MOUSE TAB     &kp RET      &lt NUM BSPC  &lt FUN DEL
                         >;
                 };
 
