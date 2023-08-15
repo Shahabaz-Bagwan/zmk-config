@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include "keys_us_international.h"
 
 #define BASE 0
 #define NAV 1
@@ -39,16 +40,16 @@
 
                 default_layer {
                         bindings = <
- &none &mt RALT Q  &kp W       &kp E          &kp R          &kp T             &kp Y        &kp U         &kp I            &kp O          &mt RALT P    &none 
- &none &kp A       &kp S       &kp D          &kp F          &kp G             &kp H        &kp J         &kp K            &kp L          &kp SEMI      &none
- &none &hm LALT Z  &hm LGUI X  &hm LCTRL C    &hm LSHFT V    &kp B             &kp N        &hm RSHFT M   &hm LCTRL COMMA  &hm LGUI DOT   &hm LALT FSLH &none
-                            &mt RCTRL ESC   &lt NAV SPACE  &kp TAB             &kp RET      &lt NUM BSPC  &lt FUN DEL
+ &none &mt RALT EN_Q  &kp EN_W       &kp EN_E          &kp EN_R          &kp EN_T     &kp EN_Y        &kp EN_U         &kp EN_I            &kp EN_O          &mt RALT EN_P &none 
+ &none &kp EN_A       &kp EN_S       &kp EN_D          &kp EN_F          &kp EN_G     &kp EN_H        &kp EN_J         &kp EN_K            &kp EN_L          &kp SEMI      &none
+ &none &hm LALT EN_Z  &hm LGUI EN_X  &hm LCTRL EN_C    &hm LSHFT EN_V    &kp EN_B     &kp EN_N        &hm RSHFT EN_M   &hm LCTRL EN_COMMA  &hm LGUI EN_DOT   &hm LALT EN_FSLH &none
+                        mt RCTRL EN_ESCAPE_CHARACTER   &lt NAV EN_SPACE  &kp TAB      &kp RET         &lt NUM BSPC     &lt FUN DEL
                         >;
                 };
  
                 nav_layer {
                         bindings = <
- &none  &none     &none         &none          &none          &tog NUM          &caps_word     &kp C_VOL_DN  &kp C_VOL_UP     &kp K_MUTE     &none  &none 
+ &none  &none     &none         &none          &none          &tog NUM          &caps_word   &kp C_VOL_DN  &kp C_VOL_UP     &kp K_MUTE     &none  &none 
  &none  &kp LALT  &kp LGUI      &kp LCTRL      &kp LSHFT      &none             &kp LEFT     &kp DOWN      &kp UP           &kp RIGHT      &none  &none
  &none  &kp LALT  &kp LGUI      &kp LCTRL      &kp LSHFT      &none             &kp HOME     &kp PG_DN     &kp PG_UP        &kp END        &none  &none
                                 &none          &none          &none             &kp RET      &kp BSPC      &kp DEL
@@ -57,10 +58,10 @@
 
                 num_layer {
                         bindings = <
- &none  &kp LBKT    &kp N7      &kp N8         &kp N9         &kp RBKT          &tog NUM     &none         &none            &none          &none    &none  
- &none  &kp SQT     &kp N4      &kp N5         &kp N6         &kp EQUAL         &kp DEL      &kp LSHFT     &kp LCTRL        &kp LGUI       &kp LALT &none 
- &none  &kp GRAVE   &kp N1      &kp N2         &kp N3         &kp BSLH          &none        &kp LSHFT     &kp LCTRL        &kp LGUI       &kp LALT &none
-                                &kp DOT        &kp N0         &kp MINUS         &none        &none         &none
+ &none  &kp EN_LBKT    &kp EN_N7      &kp EN_N8         &kp EN_N9         &kp EN_RBKT       &tog NUM     &none         &none            &none          &none    &none  
+ &none  &kp EN_SQT     &kp EN_N4      &kp EN_N5         &kp EN_N6         &kp EN_EQUAL      &kp DEL      &kp LSHFT     &kp LCTRL        &kp LGUI       &kp LALT &none 
+ &none  &kp EN_GRAVE   &kp EN_N1      &kp EN_N2         &kp EN_N3         &kp EN_BSLH       &none        &kp LSHFT     &kp LCTRL        &kp LGUI       &kp LALT &none
+                        kp DOT        &kp EN_N0         &kp MINUS         &none             &none         &none
                         >;
                 };
 
@@ -77,7 +78,7 @@
                         bindings = <
  &none  &none         &none         &none         &none         &none            &bt BT_CLR   &none   &none   &none   &none  &none 
  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none            &none        &none   &none   &none   &none  &none
- &none  &out OUT_TOG  &bt BT_PRV    &bt BT_NXT         &sys_reset   &bootloader      &bootloader  &sys_reset  &none   &none   &none  &none
+ &none  &out OUT_TOG  &bt BT_PRV    &bt BT_NXT    &sys_reset    &bootloader      &bootloader  &sys_reset  &none   &none   &none  &none
                                     &none         &none         &none            &none        &none   &none
                         >;
                 };
