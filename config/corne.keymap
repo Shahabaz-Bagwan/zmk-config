@@ -43,7 +43,7 @@
  &none &mt RALT EN_Q  &kp EN_W       &kp EN_E          &kp EN_R          &kp EN_T     &kp EN_Y        &kp EN_U         &kp EN_I            &kp EN_O          &mt RALT EN_P &none 
  &none &kp EN_A       &kp EN_S       &kp EN_D          &kp EN_F          &kp EN_G     &kp EN_H        &kp EN_J         &kp EN_K            &kp EN_L          &kp SEMI      &none
  &none &hm LALT EN_Z  &hm LGUI EN_X  &hm LCTRL EN_C    &hm LSHFT EN_V    &kp EN_B     &kp EN_N        &hm RSHFT EN_M   &hm LCTRL EN_COMMA  &hm LGUI EN_DOT   &hm LALT EN_FSLH &none
-                        mt RCTRL EN_ESCAPE_CHARACTER   &lt NAV EN_SPACE  &kp TAB      &kp RET         &lt NUM BSPC     &lt FUN DEL
+                        &mt RCTRL EN_ESCAPE_CHARACTER   &lt NAV EN_SPACE  &kp TAB      &kp RET         &lt NUM BSPC     &lt FUN DEL
                         >;
                 };
  
