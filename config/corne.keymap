@@ -17,7 +17,7 @@
 #define ADJ 4
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS BACKSPACE>;
+    continue-list = <UNDERSCORE MINUS BACKSPACE EN_N0 EN_N1 EN_N2 EN_N3 EN_N4 EN_N5 EN_N6 EN_N7 EN_N8 EN_N9>;
 };
 
 / {
@@ -43,7 +43,7 @@
  &none &mt RALT EN_Q  &kp EN_W       &kp EN_E          &kp EN_R          &kp EN_T     &kp EN_Y        &kp EN_U         &kp EN_I            &kp EN_O          &mt RALT EN_P &none 
  &none &kp EN_A       &kp EN_S       &kp EN_D          &kp EN_F          &kp EN_G     &kp EN_H        &kp EN_J         &kp EN_K            &kp EN_L          &kp EN_SEMI      &none
  &none &hm LALT EN_Z  &hm LGUI EN_X  &hm LCTRL EN_C    &hm LSHFT EN_V    &kp EN_B     &kp EN_N        &hm RSHFT EN_M   &hm LCTRL EN_COMMA  &hm LGUI EN_DOT   &hm LALT EN_FSLH &none
-                        &mt RCTRL EN_ESCAPE_CHARACTER   &lt NAV EN_SPACE  &kp TAB      &kp RET         &lt NUM BSPC     &lt FUN DEL
+                       &mt RCTRL EN_ESCAPE_CHARACTER   &lt NAV EN_SPACE  &kp TAB      &kp RET         &lt NUM BSPC     &lt FUN DEL
                         >;
                 };
  
@@ -61,7 +61,7 @@
  &none  &kp EN_LBKT    &kp EN_N7      &kp EN_N8         &kp EN_N9         &kp EN_RBKT       &tog NUM     &none         &none            &none          &none    &none  
  &none  &kp EN_SQT     &kp EN_N4      &kp EN_N5         &kp EN_N6         &kp EN_EQUAL      &kp DEL      &kp LSHFT     &kp LCTRL        &kp LGUI       &kp LALT &none 
  &none  &kp EN_GRAVE   &kp EN_N1      &kp EN_N2         &kp EN_N3         &kp EN_BSLH       &none        &kp LSHFT     &kp LCTRL        &kp LGUI       &kp LALT &none
-                       &kp DOT        &kp EN_N0         &kp EN_MINUS         &none             &none         &none
+                       &kp DOT        &kp EN_N0         &kp EN_MINUS      &none             &none        &none
                         >;
                 };
 
