@@ -4,16 +4,21 @@
  * SPDX-License-Identifier: MIT
  */
 
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV 1
 #define NUM 2
 #define FUN 3
-#define ADJ 4
+#define MOUSE 4
+#define ADJ 5
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
@@ -31,6 +36,16 @@
                         flavor = "tap-preferred";
                         bindings = <&kp>, <&kp>;
                 };
+                mmv {
+                    acceleration-exponent = <1>;      // 1
+                    time-to-max-speed-ms = <300>;    // 40
+                    delay-ms = <0>;                   // 0
+                };
+                msc {
+                    acceleration-exponent = <0>;      // 0
+                    time-to-max-speed-ms = <40>;      // 500
+                    delay-ms = <0>;                   // 10
+                };
         };
 
         keymap {
@@ -42,7 +57,7 @@
  &none &mt RALT Q  &kp W       &kp E          &kp R          &kp T     &kp Y        &kp U         &kp I            &kp O          &mt RALT P    &none
  &none &kp A       &kp S       &kp D          &kp F          &kp G     &kp H        &kp J         &kp K            &kp L          &kp SEMI      &none
  &none &hm LALT Z  &hm LGUI X  &hm LCTRL C    &hm LSHFT V    &kp B     &kp N        &hm RSHFT M   &hm LCTRL COMMA  &hm LGUI DOT   &hm LALT FSLH &none
-                                         &mt RCTRL ESC  &lt NAV SPACE  &kp TAB      &kp RET      &lt NUM BSPC     &lt FUN DEL
+                                     &mt RCTRL ESC  &lt NAV SPACE  &lt MOUSE TAB      &kp RET      &lt NUM BSPC     &lt FUN DEL
                         >;
                 };
  
@@ -70,6 +85,15 @@
  &none  &kp F11     &kp F4      &kp F5         &kp F6         &kp SLCK          &none        &none         &none            &none          &none    &none
  &none  &kp F10     &kp F1      &kp F2         &kp F3         &kp PAUSE_BREAK   &none        &kp LSHFT     &kp LCTRL        &kp LGUI       &kp LALT &none
                                 &none          &kp SPACE      &kp TAB           &mo ADJ      &none         &none
+                        >;
+                };
+
+                mouse_layer {
+                        bindings = <
+ &none &none     &none         &none          &none          &none             &none             &mkp MB4         &mkp MB5       &none             &none &none
+ &none &none     &none         &none          &none          &none             &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT   &none &none
+ &none &kp LALT  &kp LGUI      &kp LCTRL      &kp LSHFT      &none             &msc SCRL_LEFT    &msc SCRL_DOWN   &msc SCRL_UP   &msc SCRL_RIGHT &none &none 
+                               &none          &none          &none             &mkp RCLK         &mkp MCLK        &mkp LCLK
                         >;
                 };
 
