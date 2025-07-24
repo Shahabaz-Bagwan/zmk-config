@@ -2,7 +2,7 @@ file_format: "1"
 id: chocofi
 name: Chocofi
 type: shield
-url: https://github.com/foostan/crkbd/
+url: https://github.com/pashutk/chocofi
 requires: [pro_micro]
 features:
   - keys
