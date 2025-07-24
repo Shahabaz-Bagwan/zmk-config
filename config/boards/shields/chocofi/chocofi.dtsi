@@ -4,12 +4,18 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "chocofi-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
+
+&physical_layout0 {
+    kscan = <&kscan0>;
+    transform = <&default_transform>;
+};
 
 / {
 	chosen {
 		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &default_transform;
+		zmk,physical_layout = &physical_layout0;
 	};
 
 	default_transform: keymap_transform_0 {
