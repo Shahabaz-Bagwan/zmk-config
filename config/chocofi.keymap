@@ -25,6 +25,16 @@
 };
 
 / {
+        combos {
+              compatible = "zmk,combos";
+
+              bootloader_combo {
+                timeout-ms = <50>;
+                bindings = <&bootloader>;
+                key-positions = <0 1>;  // Replace with positions of the keys in your keymap
+                layers = <0>;           // Layer where this combo is active
+            };
+          };
 
         behaviors {
                 hm: homerow_mods {
