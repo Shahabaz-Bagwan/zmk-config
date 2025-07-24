@@ -1,0 +1,25 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_CHOCOFI_DONGLE
+
+config ZMK_KEYBOARD_NAME
+	default "SBZ's Chocofi"
+	
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+	
+config ZMK_USB
+	default y
+
+endif
+
+if SHIELD_CHOCOFI_LEFT || SHIELD_CHOCOFI_RIGHT || SHIELD_CHOCOFI_DONGLE 
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_BLE
+	default y
+
+endif
