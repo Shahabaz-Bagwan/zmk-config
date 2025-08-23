@@ -24,6 +24,23 @@ config SSD1306
 
 endif # ZMK_DISPLAY
 
+if LVGL
+
+config LV_Z_VDB_SIZE
+    default 64
+
+config LV_DPI_DEF
+    default 148
+
+config LV_Z_BITS_PER_PIXEL
+    default 1
+
+choice LV_COLOR_DEPTH
+    default LV_COLOR_DEPTH_1
+endchoice
+
+endif # LVGL
+
 if SHIELD_CHOCOFI_LEFT || SHIELD_CHOCOFI_RIGHT || SHIELD_CHOCOFI_DONGLE 
 
 config ZMK_SPLIT
