@@ -19,6 +19,8 @@
 #define FUN 3
 #define MOUSE 4
 #define ADJ 5
+#define EXT1 6
+#define EXT2 7
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS BACKSPACE N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
@@ -95,19 +97,29 @@
 
                 adj_layer {
                         bindings = <
-&none         &none         &none         &none         &none   &bt BT_CLR   &none       &none   &none   &none
+&none         &none         &none         &none         &none            &bt BT_CLR   &none       &none   &none   &none
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none            &none        &none       &none   &none   &none
 &out OUT_TOG  &bt BT_PRV    &bt BT_NXT    &sys_reset    &bootloader      &bootloader  &sys_reset  &none   &none   &none
-                                    &none         &none         &none            &none        &none   &none
+                            &none         &none         &none            &none        &none   &none
                         >;
                 };
 
-                extra1 {
-                  status = "reserved";
+                ext1_layer {
+                        bindings = <
+&none         &none         &none         &none         &none            &none   &none       &none   &none   &none
+&none         &none         &none         &none         &none            &none   &none       &none   &none   &none
+&none         &none         &none         &none         &none            &none   &none       &none   &none   &none
+                            &none         &none         &none            &none   &none       &none
+                        >;
                 };
 
-                extra2 {
-                  status = "reserved";
+                ext2_layer {
+                        bindings = <
+&none         &none         &none         &none         &none            &none   &none       &none   &none   &none
+&none         &none         &none         &none         &none            &none   &none       &none   &none   &none
+&none         &none         &none         &none         &none            &none   &none       &none   &none   &none
+                            &none         &none         &none            &none   &none       &none
+                        >;
                 };
         };
 };
