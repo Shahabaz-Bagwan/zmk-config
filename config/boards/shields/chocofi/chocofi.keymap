@@ -101,5 +101,13 @@
                                     &none         &none         &none            &none        &none   &none
                         >;
                 };
+
+                extra1 {
+                  status = "reserved";
+                };
+
+                extra2 {
+                  status = "reserved";
+                };
         };
 };
